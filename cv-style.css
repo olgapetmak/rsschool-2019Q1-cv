@@ -1,22 +1,15 @@
-/* --------------HEADER-------------- */
 
 html {
     font-size: 16px;
     min-width: 1024px;
 }
 
-
-body {
-    width: 100%;
-    height: 100%;
-    margin: 0;
-    padding: 0;
-}
+/* --------------------------HEADER---------------------------*/
 
 header {
     width: 100%;
     text-align: center;
-    background-color: darkgrey;
+    background-color: #c6c6c6;
     height: 60px;
 }
 
@@ -29,11 +22,27 @@ header {
 .menu-item {
     display: inline-block;
     margin: 0 20px;
+    text-decoration: none;
+    color: white;
+}
+
+/*--------------------------------BODY-------------------*/
+
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
 }
 
 main {
     display: grid;
     grid-template-columns: auto 1024px auto;
+}
+
+.about {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
 }
 
 .content, footer {
@@ -57,27 +66,18 @@ h1 {
 
 /* ---------------GRIDS--------------*/
 
-.about, .skills-grid {
+.grid-content {
     display: grid;
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: auto;
 }
 
-.skills-l {
+.skills-l, .coding-l, .job-l, .educ-l {
     grid-column: 1/1;
     text-align: center;
 }
 
-.skills-r {
-    grid-column: 2/2;
-}
-
-
-.coding-l {
-    grid-column: 1/1;
-    text-align: center;
-}
-
-.coding-r {
+.skills-r, .coding-r, .table-job, .education {
     grid-column: 2/2;
 }
 
@@ -86,12 +86,8 @@ h1 {
 
 /* --------------CODE EXAMPLES-------------- */
 
-.coding {
 
-}
-
-
-/* --------------JOB EXPERIENCE-------------- */
+/* --------------JOB EXPERIENCE & EDUCATION-------------- */
 
 .table-job {
     border: 3px solid gainsboro;
@@ -100,12 +96,12 @@ h1 {
 
 .table-head {
     background-color: gainsboro;
-
 }
 
-
-/* --------------EDUCATION-------------- */
-
+.educ-years {
+    font-style: italic;
+    margin: -15px 0;
+}
 
 /* --------CONTACTS INFO----------- */
 
@@ -114,12 +110,11 @@ h1 {
     margin-top: 30px;
     margin-right: 20px;
     display: block;
-    float: right;
 }
 
 .contacts li {
     display: block;
-    float: right;
+
 }
 
 .contacts li a {
@@ -129,11 +124,5 @@ h1 {
 .contacts li img {
     width: 24px;
     height: 24px;
-    background: rgba(255, 255, 255, 1);
-    background: -moz-linear-gradient(left, rgba(255, 255, 255, 1) 0%, rgba(246, 246, 246, 1) 0%, rgba(46, 179, 152, 1) 100%);
-    background: -webkit-linear-gradient(left, rgba(255, 255, 255, 1) 0%, rgba(246, 246, 246, 1) 0%, rgba(46, 179, 152, 1) 100%);
-    background: -o-linear-gradient(left, rgba(255, 255, 255, 1) 0%, rgba(246, 246, 246, 1) 0%, rgba(46, 179, 152, 1) 100%);
-    background: -ms-linear-gradient(left, rgba(255, 255, 255, 1) 0%, rgba(246, 246, 246, 1) 0%, rgba(46, 179, 152, 1) 100%);
-    background: linear-gradient(to right, rgba(255, 255, 255, 1) 0%, rgba(246, 246, 246, 1) 0%, rgba(46, 179, 152, 1) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#2eb398', GradientType=1);
+
 }
