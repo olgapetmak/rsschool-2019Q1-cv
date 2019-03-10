@@ -1,4 +1,4 @@
-# **Olga Makouskaya**
+
 
 *Future Junior Front-End Developer*
 
@@ -41,3 +41,4 @@ Coming soon...
 ## English Level
 >**Advanced** (**C1**)<br>
 >+10-years Work-Experience on the Interpreter-position
+

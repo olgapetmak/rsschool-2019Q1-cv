@@ -1,0 +1,139 @@
+/* --------------HEADER-------------- */
+
+html {
+    font-size: 16px;
+    min-width: 1024px;
+}
+
+
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    width: 100%;
+    text-align: center;
+    background-color: darkgrey;
+    height: 60px;
+}
+
+.menu {
+    margin: 0;
+    line-height: 60px;
+    min-width: 1024px;
+}
+
+.menu-item {
+    display: inline-block;
+    margin: 0 20px;
+}
+
+main {
+    display: grid;
+    grid-template-columns: auto 1024px auto;
+}
+
+.content, footer {
+    grid-column: 2/2;
+}
+
+/* --------------ABOUT-------------- */
+
+.portrait {
+    height: 320px;
+    width: 255px;
+}
+
+h1 {
+    font-size: 3em;
+}
+
+.subtitle {
+    font-style: italic;
+}
+
+/* ---------------GRIDS--------------*/
+
+.about, .skills-grid {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+
+.skills-l {
+    grid-column: 1/1;
+    text-align: center;
+}
+
+.skills-r {
+    grid-column: 2/2;
+}
+
+
+.coding-l {
+    grid-column: 1/1;
+    text-align: center;
+}
+
+.coding-r {
+    grid-column: 2/2;
+}
+
+/* --------------SKILS-------------- */
+
+
+/* --------------CODE EXAMPLES-------------- */
+
+.coding {
+
+}
+
+
+/* --------------JOB EXPERIENCE-------------- */
+
+.table-job {
+    border: 3px solid gainsboro;
+    text-align: center;
+}
+
+.table-head {
+    background-color: gainsboro;
+
+}
+
+
+/* --------------EDUCATION-------------- */
+
+
+/* --------CONTACTS INFO----------- */
+
+.contacts {
+    text-align: center;
+    margin-top: 30px;
+    margin-right: 20px;
+    display: block;
+    float: right;
+}
+
+.contacts li {
+    display: block;
+    float: right;
+}
+
+.contacts li a {
+    border-bottom: none;
+}
+
+.contacts li img {
+    width: 24px;
+    height: 24px;
+    background: rgba(255, 255, 255, 1);
+    background: -moz-linear-gradient(left, rgba(255, 255, 255, 1) 0%, rgba(246, 246, 246, 1) 0%, rgba(46, 179, 152, 1) 100%);
+    background: -webkit-linear-gradient(left, rgba(255, 255, 255, 1) 0%, rgba(246, 246, 246, 1) 0%, rgba(46, 179, 152, 1) 100%);
+    background: -o-linear-gradient(left, rgba(255, 255, 255, 1) 0%, rgba(246, 246, 246, 1) 0%, rgba(46, 179, 152, 1) 100%);
+    background: -ms-linear-gradient(left, rgba(255, 255, 255, 1) 0%, rgba(246, 246, 246, 1) 0%, rgba(46, 179, 152, 1) 100%);
+    background: linear-gradient(to right, rgba(255, 255, 255, 1) 0%, rgba(246, 246, 246, 1) 0%, rgba(46, 179, 152, 1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#2eb398', GradientType=1);
+}
