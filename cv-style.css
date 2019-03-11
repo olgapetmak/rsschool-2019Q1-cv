@@ -1,0 +1,128 @@
+
+html {
+    font-size: 16px;
+    min-width: 1024px;
+}
+
+/* --------------------------HEADER---------------------------*/
+
+header {
+    width: 100%;
+    text-align: center;
+    background-color: #c6c6c6;
+    height: 60px;
+}
+
+.menu {
+    margin: 0;
+    line-height: 60px;
+    min-width: 1024px;
+}
+
+.menu-item {
+    display: inline-block;
+    margin: 0 20px;
+    text-decoration: none;
+    color: white;
+}
+
+/*--------------------------------BODY-------------------*/
+
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    display: grid;
+    grid-template-columns: auto 1024px auto;
+}
+
+.about {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+
+.content, footer {
+    grid-column: 2/2;
+}
+
+/* --------------ABOUT-------------- */
+
+.portrait {
+    height: 320px;
+    width: 255px;
+}
+
+h1 {
+    font-size: 3em;
+}
+
+.subtitle {
+    font-style: italic;
+}
+
+/* ---------------GRIDS--------------*/
+
+.grid-content {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: auto;
+}
+
+.skills-l, .coding-l, .job-l, .educ-l {
+    grid-column: 1/1;
+    text-align: center;
+}
+
+.skills-r, .coding-r, .table-job, .education {
+    grid-column: 2/2;
+}
+
+/* --------------SKILS-------------- */
+
+
+/* --------------CODE EXAMPLES-------------- */
+
+
+/* --------------JOB EXPERIENCE & EDUCATION-------------- */
+
+.table-job {
+    border: 3px solid gainsboro;
+    text-align: center;
+}
+
+.table-head {
+    background-color: gainsboro;
+}
+
+.educ-years {
+    font-style: italic;
+    margin: -15px 0;
+}
+
+/* --------CONTACTS INFO----------- */
+
+.contacts {
+    text-align: center;
+    margin-top: 30px;
+    margin-right: 20px;
+    display: block;
+}
+
+.contacts li {
+    display: block;
+
+}
+
+.contacts li a {
+    border-bottom: none;
+}
+
+.contacts li img {
+    width: 24px;
+    height: 24px;
+
+}
